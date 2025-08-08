@@ -5,19 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Janot Restaurant</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            gothic: ['"Century Gothic"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: "Century Gothic", sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-[#ece9dc] text-[#5b4636] font-serif">
+<body class="bg-[#ece9dc] text-[#5b4636] font-gothic">
 
   <!-- Hero Section -->
-  <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('JUN_1690.jpg');">
-    <img src="images/ambience.webp" alt="Ambience" class="absolute inset-0 w-full h-full object-cover">
-    <div class="absolute inset-0 bg-black/40"></div>
-    <div class="relative z-10 text-center px-4">
-      <h1 class="text-5xl md:text-7xl font-semibold text-white">Janot</h1>
-      <p class="text-xl md:text-2xl text-white mt-4">By Avinash Martins</p>
-      <a href="https://wa.me/8459716905" class="mt-6 inline-block bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition">Reserve a Table</a>
-    </div>
-  </section>
+<section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('JUN_1690.jpg');">
+  <img src="images/ambience.webp" alt="Ambience" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40"></div>
+  <div class="relative z-10 text-center px-4">
+    <img src="images/janot.webp" alt="Janot Logo" class="mx-auto w-60 md:w-80">
+    <p class="text-xl md:text-2xl text-white mt-4">By Avinash Martins</p>
+    <a href="https://wa.me/8459716905" class="mt-6 inline-block bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition">Reserve a Table</a>
+  </div>
+</section>
 
   <!-- About Section -->
   <section class="py-16 px-6 md:px-16 max-w-5xl mx-auto">
@@ -47,7 +63,7 @@
     </div>
   </section>
 
- <!-- Menu Section -->
+  <!-- Menu Section -->
   <section class="bg-[#f5f1ec] py-20 px-6 md:px-32 text-center">
     <h2 class="text-4xl font-semibold mb-6"></h2>
     <p class="mb-10 text-lg max-w-2xl mx-auto">Each dish is a thoughtful reflection of Goa's evolving palate, delicately presented with contemporary flair.</p>
@@ -64,7 +80,7 @@
     <p class="mb-10 text-lg max-w-2xl mx-auto">Celebrate the spirit of Goa with Feni-forward cocktails and elevated pairings that complement our cuisine beautifully.</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <img src="images/404.webp" alt="Drink 1" class="w-full rounded-lg shadow-md">
-      <img src="images/akira.webp" alt="Drink 2" class="w-full rounded-lg shadow-md">
+      <img src="images/Akira.webp" alt="Drink 2" class="w-full rounded-lg shadow-md">
       <img src="images/black forest.webp" alt="Drink 3" class="w-full rounded-lg shadow-md">
     </div>
   </section>
@@ -73,19 +89,19 @@
   <section id="reservation" class="bg-[#eae6df] py-20 px-6 md:px-32 text-center">
     <h2 class="text-4xl font-semibold mb-6">Reserve Your Experience</h2>
     <p class="mb-8 text-lg max-w-xl mx-auto">Join us for a thoughtfully crafted dining journey. Janot welcomes reservations for intimate dinners and curated gatherings.</p>
-    <a href="https://wa.me/84597 16905" target="_blank" class="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-700 transition">Book via WhatsApp</a>
+    <a href="https://wa.me/8459716905" target="_blank" class="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-700 transition">Book via WhatsApp</a>
   </section>
 
   <!-- Gallery -->
-<section class="py-16 px-4 sm:px-6 md:px-16 text-center">
-  <h2 class="text-3xl sm:text-4xl font-bold mb-10">Gallery</h2>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <img src="images/gallery1.webp" alt="Gallery 1" class="w-full rounded-lg shadow-md">
-    <img src="images/gallery2.webp" alt="Gallery 2" class="w-full rounded-lg shadow-md">
-    <img src="images/gallery3.webp" alt="Gallery 3" class="w-full rounded-lg shadow-md">
-    <img src="images/gallery4.webp" alt="Gallery 4" class="w-full rounded-lg shadow-md">
-  </div>
-</section>
+  <section class="py-16 px-4 sm:px-6 md:px-16 text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-10">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="images/gallery1.webp" alt="Gallery 1" class="w-full rounded-lg shadow-md">
+      <img src="images/gallery2.webp" alt="Gallery 2" class="w-full rounded-lg shadow-md">
+      <img src="images/gallery3.webp" alt="Gallery 3" class="w-full rounded-lg shadow-md">
+      <img src="images/gallery4.webp" alt="Gallery 4" class="w-full rounded-lg shadow-md">
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-[#0b3d2e] text-center text-white py-10">
