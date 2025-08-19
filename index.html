@@ -20,26 +20,33 @@
     body {
       font-family: "Century Gothic", sans-serif;
     }
+    /* Hide scrollbar for gallery */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
   </style>
 </head>
 <body class="bg-[#ece9dc] text-[#5b4636] font-gothic">
 
   <!-- Hero Section -->
-<section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('JUN_1690.jpg');">
-  <img src="images/ambience.webp" alt="Ambience" class="absolute inset-0 w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40"></div>
-  <div class="relative z-10 text-center px-4">
-    <img src="images/janot.webp" alt="Janot Logo" class="mx-auto w-60 md:w-80">
-    <a href="https://wa.me/8459716905" class="mt-6 inline-block bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition">Reserve a Table</a>
-  </div>
-</section>
+  <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('JUN_1690.jpg');">
+    <img src="images/ambience.webp" alt="Ambience" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 text-center px-4">
+      <img src="images/janot.webp" alt="Janot Logo" class="mx-auto w-52 md:w-72">
+      <a href="https://wa.me/8459716905" class="mt-6 inline-block bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition">Reserve a Table</a>
+    </div>
+  </section>
 
   <!-- About Section -->
   <section class="py-16 px-6 md:px-16 max-w-5xl mx-auto">
     <h2 class="text-4xl font-semibold mb-6">About Janot</h2>
     <p class="text-lg leading-relaxed">
-      Janot Restaurant, located in Panaji, Goa, offers an exceptional dining experience in a contemporary setting. The menu features a creative twist on traditional Goan cuisine, showcasing re-imagined dishes that highlight the region's rich culinary heritage. Guests can also indulge in expertly crafted Feni cocktails, making it a perfect destination for both locals and visitors seeking a unique gastronomic adventure.
-    </p>
+      Janôt is an old Portuguese expression an exclamation of beauty and delight. It’s a word Chef Avinash heard often from his grandmother, now lovingly revived through this restaurant. Inhonoring that memory, Janôt becomes a space where tradition meets imagination. Our approach to food is intentionally fluid. Unbound by cuisine,yet rooted in a deep reverence for ingredients, we allow theseasons, the land, and the stories behind each element to guideus. Every dish is a thoughtful expression personal, place-driven,and crafted with care.  
   </section>
 
   <!-- Chef Section -->
@@ -62,52 +69,49 @@
     </div>
   </section>
 
-<!-- Menu Section -->
-<section class="bg-[#f5f1ec] py-20 px-6 md:px-32 text-center">
-  <h2 class="text-4xl font-semibold mb-6"></h2>
-  <p class="mb-10 text-lg max-w-2xl mx-auto">Each dish is a thoughtful reflection of Goa's evolving palate, delicately presented with contemporary flair.</p>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <img src="images/chicken roulade.jpg" alt="Dish 1" class="w-full h-80 object-cover rounded-lg shadow-md">
-    <img src="images/chonak.webp" alt="Dish 2" class="w-full h-80 object-cover rounded-lg shadow-md">
-    <img src="images/Nest in forest (crab).webp" alt="Dish 3" class="w-full h-80 object-cover rounded-lg shadow-md">
-  </div>
-</section>
-
-<!-- Drinks Section -->
-<section class="py-20 px-6 md:px-32 text-center">
-  <h2 class="text-4xl font-semibold mb-6">Signature Drinks</h2>
-  <p class="mb-10 text-lg max-w-2xl mx-auto">Celebrate the spirit of Goa with Feni-forward cocktails and elevated pairings that complement our cuisine beautifully.</p>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <img src="images/404.webp" alt="Drink 1" class="w-full h-80 object-cover rounded-lg shadow-md">
-    <img src="images/Akira.webp" alt="Drink 2" class="w-full h-80 object-cover rounded-lg shadow-md">
-    <img src="images/black forest.webp" alt="Drink 3" class="w-full h-80 object-cover rounded-lg shadow-md">
-  </div>
-</section>
-
-
-<!-- Reservation Section -->
-<section id="reservation" class="relative bg-cover bg-center h-[400px] sm:h-[500px]" style="background-image: url('images/gallery1.webp');">
-  <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center text-white px-6 md:px-32">
-    <div class="flex flex-col items-center">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6">Reserve Your Experience</h2>
-      <p class="mb-8 text-lg max-w-xl mx-auto">Join us for a thoughtfully crafted dining journey. Janot welcomes reservations for intimate dinners and curated gatherings.</p>
-      <a href="https://wa.me/8459716905" target="_blank" class="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-gray-200 transition">Book via WhatsApp</a>
+  <!-- Menu Section -->
+  <section class="bg-[#f5f1ec] py-20 px-6 md:px-32 text-center">
+    <h2 class="text-4xl font-semibold mb-6">Menu</h2>
+    <p class="mb-10 text-lg max-w-2xl mx-auto">Each dish is a thoughtful reflection of Goa's evolving palate, delicately presented with contemporary flair.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img src="images/chicken roulade.jpg" alt="Dish 1" class="w-full h-96 object-cover rounded-lg shadow-md">
+      <img src="images/Nest in forest (crab).webp" alt="Dish 3" class="w-full h-96 object-cover rounded-lg shadow-md">
+      <img src="images/chonak.jpg" alt="Dish 2" class="w-full h-96 object-cover rounded-lg shadow-md">
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Drinks Section -->
+  <section class="py-20 px-6 md:px-32 text-center">
+    <h2 class="text-4xl font-semibold mb-6">Signature Drinks</h2>
+    <p class="mb-10 text-lg max-w-2xl mx-auto">Celebrate the spirit of Goa with Feni-forward cocktails and elevated pairings that complement our cuisine beautifully.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img src="images/Akira.webp" alt="Drink 2" class="w-full h-96 object-cover rounded-lg shadow-md">
+      <img src="images/404.webp" alt="Drink 1" class="w-full h-96 object-cover rounded-lg shadow-md">
+      <img src="images/black forest.webp" alt="Drink 3" class="w-full h-96 object-cover rounded-lg shadow-md">
+    </div>
+  </section>
 
-<!-- Gallery -->
-<section class="py-16 px-4 sm:px-6 md:px-16 text-center">
-  <h2 class="text-3xl sm:text-4xl font-bold mb-10">Gallery</h2>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <img src="images/janot brunch.webp" alt="Gallery 1" class="w-full h-64 object-cover rounded-lg shadow-md">
-    <img src="images/gallery2.webp" alt="Gallery 2" class="w-full h-64 object-cover rounded-lg shadow-md">
-    <img src="images/gallery3.webp" alt="Gallery 3" class="w-full h-64 object-cover rounded-lg shadow-md">
-    <img src="images/gallery4.webp" alt="Gallery 4" class="w-full h-64 object-cover rounded-lg shadow-md">
-  </div>
-</section>
+  <!-- Reservation Section -->
+  <section id="reservation" class="relative bg-cover bg-center h-[400px] sm:h-[500px]" style="background-image: url('images/gallery1.webp');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center text-white px-6 md:px-32">
+      <div class="flex flex-col items-center">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6">Reserve Your Experience</h2>
+        <p class="mb-8 text-lg max-w-xl mx-auto">Join us for a thoughtfully crafted dining journey. Janot welcomes reservations for intimate dinners and curated gatherings.</p>
+        <a href="https://wa.me/8459716905" target="_blank" class="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-gray-200 transition">Book via WhatsApp</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Gallery -->
+  <section class="py-16 px-4 sm:px-6 md:px-16 text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-10">Gallery</h2>
+    <div class="flex gap-6 overflow-x-auto scrollbar-hide">
+      <img src="images/janot brunch.webp" alt="Gallery 1" class="w-96 h-80 object-contain rounded-lg shadow-md flex-shrink-0">
+      <img src="images/gallery2.webp" alt="Gallery 2" class="w-96 h-80 object-contain rounded-lg shadow-md flex-shrink-0">
+      <img src="images/gallery3.webp" alt="Gallery 3" class="w-96 h-80 object-contain rounded-lg shadow-md flex-shrink-0">
+      <img src="images/gallery4.webp" alt="Gallery 4" class="w-96 h-80 object-contain rounded-lg shadow-md flex-shrink-0">
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-[#0b3d2e] text-center text-white py-10">
